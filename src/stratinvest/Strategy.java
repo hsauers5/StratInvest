@@ -99,19 +99,19 @@ public abstract class Strategy {
                 */
             }
 
-            
+            /*
             if (i > 0)
                 System.out.println(getValue(i) / getValue(i-1));
             else
                 System.out.println(getValue(i) / 10000);
-            
+            */
         }
         
         avgLoss /= ((end-month)/12);
         
         roi = (getValue(end) / 10000);
         //System.out.println("Total returns for " + stratName + ": " + roi);
-        //System.out.println(roi);
+        System.out.println(roi);
         
         //finish(end);
 

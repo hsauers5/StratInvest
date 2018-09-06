@@ -69,7 +69,7 @@ public class StratInvest {
 
         int INCREMENT = 1; //investment period in years
         int YEARSAGO = 55; //how many years ago: range is 118:1 + investment period. 55 for BirthRates
-        int ENDYEARSAGO = 0;
+        int ENDYEARSAGO = 3;
         
         int PERIODS = YEARSAGO - (INCREMENT + ENDYEARSAGO);
         
@@ -247,8 +247,11 @@ public class StratInvest {
         //Strategy YieldStr = new YieldStrat(YEARS, PERIOD);
         //strategies.add(YieldStr);
         
-        Strategy EarningsStr = new EarningsStrat(YEARS, PERIOD);
-        strategies.add(EarningsStr);
+        //Strategy EarningsStr = new EarningsStrat(YEARS, PERIOD);
+        //strategies.add(EarningsStr);
+        
+        Strategy GiniStr = new GiniStrat(YEARS, PERIOD);
+        strategies.add(GiniStr);
         
         /*
         for (double d : yields)
